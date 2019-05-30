@@ -1,0 +1,271 @@
+#lunbo{
+    width: 100%;
+    box-sizing: border-box;
+}
+html{
+    background-color: #f5f5f5;
+}
+#main{
+    padding: .2rem;
+    border-bottom: .01rem solid #e5e5e5;
+    margin-bottom: .12rem;
+    background: #fff;
+}
+#main>p:first-of-type{
+    line-height: .3rem;
+    font-size: .12rem;
+    background: url('../image/SecondHandList/phone.png') no-repeat right center;
+    background-size: .13rem .19rem;
+}
+#main>p:first-of-type>span{
+    color: #db4c3f;
+    font-weight: bold;
+    margin-right: .04rem;
+}
+#main>p:last-of-type{
+    line-height: .3rem;
+    color: #b0b0b0;
+    font-size: .11rem;
+}
+#main>div{
+    overflow: hidden;
+    font-size: .11rem;
+    color: #849aae;
+}
+#main>div>span{
+    padding: .05rem .08rem;
+    background-color: #dee9f0;
+    margin-right: .12rem;
+}
+#fangyuan,#tese,#fenjian{
+    padding: 0 .2rem;
+    border-top: .01rem solid #e5e5e5;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-bottom: .01rem solid #e5e5e5;
+}
+#fangyuan>li{
+    border-bottom: .01rem solid #e5e5e5;
+    font-size: .11rem;
+    line-height: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#fangyuan>li>span{
+    width: 50%;
+}
+#fangyuan>li:last-of-type,#tese>p:last-of-type{
+    display: block;
+    text-align: center;
+    color: #999;
+    font-size: .11rem;
+    line-height: .5rem;
+    border: none;
+}
+#tese{
+    margin-top: .1rem;
+    border-bottom: .01rem solid #e5e5e5;
+}
+#tese>p:first-of-type,#fenjian>p{
+    line-height: .5rem;
+    color: #ff9326;
+    border-bottom: .01rem solid #e5e5e5;
+}
+#tese>div{
+    padding: .1rem 0;
+    font-size: .11rem;
+    line-height: .2rem;
+    border-bottom: .01rem solid #e5e5e5;
+}
+#tese>p:last-of-type,#fenjian{
+    width: 100%;
+}
+#fenjian>ul>li{
+    padding: .2rem 0;
+    border-bottom: .01rem solid #ff9326;
+    display: flex;
+    justify-content: space-between;
+}
+#fenjian>ul>li>div:first-of-type{
+    width: 30%;
+    margin-right: .05rem;
+}
+#fenjian>ul>li>div:last-of-type{
+    width: 70%;
+    font-size: .11rem;
+}
+#fenjian>ul>li>div:last-of-type>p:first-of-type{
+    font-size: .12rem;
+    line-height: .22rem;
+    font-weight: 900;
+}
+#fenjian>ul>li>div:last-of-type>p:nth-of-type(2){
+    line-height: .47rem;
+}
+#fenjian>ul>li>div:last-of-type>p:nth-of-type(3)>span{
+    background-color: #f4f7f9;
+    color: #849aae;
+    padding: .05rem .08rem;
+    margin-right: .05rem;
+}
+#fenjian>ul>li:last-of-type{
+    border-bottom: none;
+}
+#fenjian{
+    margin: .1rem 0;
+    border-top: .01rem solid #e5e5e5;
+    border-bottom: .01rem solid #e5e5e5;
+}
+#duikou,#zhou{
+    padding: 0 .2rem;
+    background-color: #fff;
+}
+#duikou>h4,#zhou>h4{
+    line-height: .5rem;
+    border-bottom: .01rem solid #e5e5e5;
+}
+#duikou li{
+    font-size: .11rem;
+    line-height: .5rem;
+    border-bottom: .01rem solid #e5e5e5;
+}
+#duikou li>span:first-of-type{
+    color: #999999;
+    margin-right: .02rem;
+}
+#duikou li:last-of-type{
+    text-align: center;
+    color: #999;
+}
+#map{
+    width: 100%;
+    height: 1.54rem;
+
+}
+#ditu{
+    box-sizing: border-box;
+    padding:.2rem;
+    background-color: #fff;
+}
+#tuijian{
+    border-top: .01rem solid #e5e5e5;
+    margin-top: .12rem;
+    background-color: #fff;
+}
+#tuijian>h4{
+    line-height: .5rem;
+    box-sizing: border-box;
+    padding-left: .2rem;
+    border-bottom: .01rem solid #f5f5f5;
+}
+#tuijian>ul{
+    padding: .2rem .15rem;
+}
+#tuijian>ul>li{
+    border-bottom: .01rem solid #e5e5e5;
+    /* padding: 0 .15rem; */
+}
+#tuijian>ul>li>div{
+    display: flex;
+    justify-content: space-between;
+}
+#tuijian>ul>li>div>div:first-of-type{
+    width: 30%;
+    margin-right: .12rem;
+}
+#tuijian>ul>li>div>div:last-of-type{
+    width: 70%;
+}
+#tuijian>ul>li>div>div:last-of-type>p{
+    font-size: .12rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: .2rem;
+}
+#tuijian>ul>li>div:first-of-type>div>p:first-of-type>b{
+    color: #ff8a00;
+}
+#tuijian>ul>li>div:first-of-type>div>p:nth-of-type(2){
+    color: #8b8b8b;
+}
+#tuijian>ul>li>div:first-of-type>div>p:nth-of-type(3) span{
+    color: #849aae;
+    padding: .05rem .08rem;
+    background-color: #f4f7f9;
+    box-sizing: border-box;
+}
+#tuijian>ul>li>div:last-of-type{
+    width: 100%;
+    line-height: .36rem;
+    background-color: #f2f2f2;
+    font-size: .11rem;
+    margin:  .18rem 0;
+    padding-left: .1rem;
+    position: relative;
+    box-sizing: border-box;
+}
+#tuijian>ul>li>div:last-of-type>span{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: .16rem solid transparent;
+    border-bottom-color: #f2f2f2;
+    position: absolute;
+    left: .06rem;
+    top: -0.31rem;
+}
+#tuijian>ul>li:last-of-type>div:last-of-type{
+    margin-bottom: 0;
+}
+#tuijian>ul>li:last-of-type{
+    border-bottom: none;
+}
+.xiangsi{
+    width: 100%;
+    border-top: .01rem solid #f5f5f5;
+    text-align: center;
+    line-height: .4rem;
+    color: #666;
+    font-size: .11rem;
+    background-color: #fff;
+}
+#ewfoot{
+    height: .48rem;
+    padding: .1rem 0 0 .2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#ewfoot>span:first-of-type{
+    width: 2rem;
+    height: .4rem;
+    line-height: .4rem;
+    font-size: .11rem;
+    color: #fff;
+    background:url('../image/SecondHandList/user.png') no-repeat .48rem center  #ff8a00;
+    border-radius: .08rem;
+    background-size: .21rem .21rem;
+    text-align: center;
+}
+#ewfoot>span:last-of-type{
+    height: .4rem;
+    line-height: .4rem;
+    width: 1rem;
+    font-size: .11rem;
+    text-align: center;
+    color: #666;
+    background: url('../image/SecondHandList/xin.png') no-repeat .15rem center;
+    background-size: .21rem;
+}
+
+
+
+
+
+
+
+
+
+
+

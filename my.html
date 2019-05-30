@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/gonggong.css">
+    <link rel="stylesheet" href="css/my.css">
+</head>
+
+<body>
+    <div id="main">
+        <div>
+            <div>
+                <span></span>
+                <p>APP</p>
+            </div>
+            <div>
+                <span></span>
+                <p>我的</p>
+            </div>
+        </div>
+        <div>
+            <p><img src="image/my/urse2.png" alt=""></p>
+            <p>登录</p>
+        </div>
+    </div>
+    <ul>
+        <li>
+            <div>
+                <span></span>
+                我关注的房源
+            </div>
+            <span></span>
+        </li>
+        <li>
+            <div>
+                <span></span>
+                我关注的房源
+            </div>
+            <span></span>
+        </li>
+        <li>
+            <div>
+                <span></span>
+                我关注的房源
+            </div>
+            <span></span>
+        </li>
+        <li>
+            <div>
+                <span></span>
+                我关注的房源
+            </div>
+            <span></span>
+        </li>
+    </ul>
+    <script src="js/zepto.js"></script>
+    <script>
+        
+        //适应网页
+        function chang(){
+            var w=320;
+            var nw=document.documentElement.clientWidth||document.body.clientWidth;
+            document.documentElement.style.fontSize=(nw/w)*100+"px";
+        }
+        window.onresize=function(){
+            chang();
+        }
+        chang();
+       </script>
+
+</html>

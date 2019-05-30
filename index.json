@@ -1,0 +1,25 @@
+[{
+    "img":"img1.jpg",
+    "tittle":"文化部中间层一层带阳台",
+    "type":"2室1厅96m<sup>2</sup>南北",
+    "primary":1105,
+    "where":"红庙北里",
+    "price":14268,
+    "biaoqian":["学区房","独家"]
+},{
+    "img":"img2.png",
+    "tittle":"光大水墨 精装复试阳台",
+    "type":"2室1厅96m<sup>2</sup>南北",
+    "primary":280,
+    "where":"光大水墨",
+    "price":14268,
+    "biaoqian":["学区房","独家","满五唯一"]
+},{
+    "img":"img3.png",
+    "tittle":"南北通透两居 精装修复试阳台",
+    "type":"2室1厅96m<sup>2</sup>南北",
+    "primary":320,
+    "where":"北京新天地",
+    "price":14268,
+    "biaoqian":["地铁房","独家"]
+}]

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/gonggong.css">
+    <link rel="stylesheet" href="css/fanglist.css">
+</head>
+<body>
+    <!--网页头部-->
+    <header id="header">
+            <span></span>
+            <span></span>
+            <span></span>
+    </header>
+    <!-- 搜索框 -->
+    <div class="formgrop">
+        <div>
+            <span>丨</span>
+            <span></span>
+        </div>
+        <input placeholder="请输入商圈名或商圈名" type="text">
+    </div>
+    <!-- 导航 -->
+    <ul class="nav">
+        <li data-class=".sing">
+            <b>区域</b>
+            <span></span>
+        </li>
+        <li data-class=".jia">
+            <b>价格</b>
+            <span></span>
+        </li>
+        <li data-class=".xing">
+            <b>房型</b>
+            <span></span>
+        </li>
+        <li data-class=".duo">
+            <b>更多</b>
+            <span></span>
+        </li>
+    
+    
+    </ul>
+    <!-- 房子列表 -->
+    <div class="fanglist">
+        <ul>
+        </ul>
+    </div>
+    <!-- 遮罩层 -->
+    <div class="hidden">
+        <ul class="nav">
+            <li data-class=".sing">
+                <b>区域</b>
+                <span></span>
+            </li>
+            <li data-class=".jia">
+                <b>价格</b>
+                <span></span>
+            </li>
+            <li data-class=".xing">
+                <b>房型</b>
+                <span></span>
+            </li>
+            <li data-class=".duo">
+                <b>更多</b>
+                <span></span>
+            </li>
+        </ul>
+        <!-- 区域 -->
+        <div class="sing">
+            <ul>
+                <li data-id="#qcyv"  class="active"><a href="#"><b>区域</b></a></li>
+                <li data-id="#ditie"><a href="#"><b>地铁</b></a></li>
+            </ul>
+            <div>
+                <ul id="#qcyv">
+                    <li><a href="#">附近</a></li>
+                    <li class="cc"><a href="#">不限</a></li>
+                    <li><a href="#">不限</a></li>
+                    <li><a href="#">安贞</a></li>
+                    <li class="cc"><a href="#">朝阳</a></li>
+                    <li><a href="#">奥林匹克公园</a></li>
+                    <li><a href="#">海淀</a></li>
+                    <li><a href="#">百子湾</a></li>
+                    <li><a href="#">昌平</a></li>
+                    <li><a href="#">北工大</a></li>
+                    <li><a href="#">丰台</a></li>
+                    <li><a href="#">北苑</a></li>
+                    <li><a href="#">石景山</a></li>
+                    <li><a href="#">CBD</a></li>
+                </ul>
+                <ul id="#ditie">
+                    <li><a href="#">地铁1号线</a></li>
+                    <li><a href="#">地铁2号线</a></li>
+                    <li class="cc"><a href="#">地铁3号线</a></li>
+                    <li><a href="#">地铁4号线</a></li>
+                    <li><a href="#">地铁5号线</a></li>
+                    <li class="cc"><a href="#">地铁6号线</a></li>
+                    <li><a href="#">地铁7号线</a></li>
+                    <li><a href="#">地铁8号线</a></li>
+                    <li><a href="#">地铁9号线</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 价格 -->
+        <div class="jia">
+            <ul>
+                <li>不限</li>
+                <li>100万以下</li>
+                <li>100万-150万</li>
+                <li>150万-200万</li>
+                <li>200万-250万</li>
+                <li>250万-300万</li>
+                <li>自定义价格</li>
+            </ul>
+        </div>
+        <!-- 房型 -->
+        <div class="xing">
+            <ul>
+                <li>
+                    <span>不限</span>
+                </li>
+                <li>
+                    <span>1室</span>
+                    <input type="checkbox">
+                </li>
+                <li>
+                    <span>2室</span>
+                    <input type="checkbox">
+                </li>
+                <li>
+                    <span>3室</span>
+                    <input type="checkbox" checked>
+                </li>
+                <li>
+                    <span>4室</span>
+                    <input type="checkbox">
+                </li>
+                <li>
+                    <span>5室</span>
+                    <input type="checkbox">
+                </li>
+                <li><button>确定</button></li>
+            </ul>
+        </div>
+        <!-- 更多 -->
+        <div class="duo">
+            <div>
+                <p>区域</p>
+                <ul>
+                    <li>南</li>
+                    <li>南北</li>
+                    <li>东</li>
+                    <li>西</li>
+                    <li>北</li>
+                </ul>
+            </div>
+            <div>
+                <p>面积（平方）</p>
+                <ul>
+                    <li>50以下</li>
+                    <li>50-70</li>
+                    <li>70-90</li>
+                    <li>90-110</li>
+                    <li>110-130</li>
+                    <li>130-150</li>
+                    <li>150-200</li>
+                    <li>200以上</li>
+                </ul>
+            </div>
+            <div>
+                <p>标签</p>
+                <ul>
+                    <li>学区房</li>
+                    <li>地铁房</li>
+                    <li>不限购</li>
+                    <li>满两年</li>
+                    <li>满五唯一</li>
+                    <li>降价</li>
+                    <li>新上</li>
+                    <li>独家</li>
+                    <li>有钥匙</li>
+                </ul>
+            </div>
+            <div>
+                <p>楼龄</p>
+                <ul>
+                    <li>5年以内</li>
+                    <li>10年以内</li>
+                    <li>10-20年</li>
+                    <li>20年以上</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--网页底部-->
+    <footer id="footer">
+            <p>
+                    <a href="#">北京找房无忧</a>><a href="#">首页</a>
+                </p>
+                <div>
+                   <div>
+                       <img src="image/index/apple.png" alt="">
+                       <div>
+                           <p>iphone</p>
+                           <p>客户端</p>
+                       </div>
+                   </div>
+                   <div>
+                       <img src="image/index/android.png" alt="">
+                       <div>
+                           <p>android</p>
+                           <p>客户端</p>
+                       </div>
+                   </div>
+                </div>
+                <p class="foot">北京找房无忧房地产经纪公司</p>
+                <p class="foot">网络经营许可证京ICP备20160812号</p>
+    </footer>
+    <script src="js/zepto.js"></script>
+    <script>
+        $(window).load(()=>{
+            $.ajax({
+                url:"fanglist.json",
+                success:function(data){
+                    var html="";
+                    $(data).each((inde,elem)=>{
+                        html+=`
+                        <li>
+                         <div class="fangimg">
+                            <img src="image/SecondHandList/${data[inde].img}" alt="">
+                        </div>
+                        <div>
+                            <p>${data[inde].tittle}</p>
+                            <p>${data[inde].huxing}</p>
+                            <p>签约价格:<span>${data[inde].primary}元/平</span><b>${data[inde].sum}万</b></p>
+                            <p>签约日期:<span>${data[inde].time}</span></p>
+                        </div>
+                        </li>
+                        `;
+                    });
+                    $(".fanglist>ul").html(html);
+                }
+            })
+        });
+         //适应网页
+         function chang(){
+            var w=320;
+            var nw=document.documentElement.clientWidth||document.body.clientWidth;
+            document.documentElement.style.fontSize=(nw/w)*100+"px";
+        }
+        window.onresize=function(){
+            chang();
+        }
+        chang();
+    function stop() {
+        document.documentElement.style.position = 'fixed';
+        document.body.style.overflow = 'hidden'; //隐藏滚动条
+    }
+/***取消滑动限制***/
+    function move() {
+        document.documentElement.style.position = 'static';
+        document.body.style.overflow = ''; //出现滚动条
+    }
+    $(".nav").on("click","li",(e)=>{
+        var cl=$(e.target).parents("li").attr("data-class");
+        var inde=$(e.target).parent().index();
+        $(".hidden").show();
+        stop();
+        $(".hidden .nav li").eq(inde).addClass("active").siblings("li").removeClass("active");
+        $(cl).show().siblings("div").hide();
+    });
+        $(".sing>div>ul>li").on("click",function(e){
+            $(e.target).parent().toggleClass("cc");
+        });
+        $(".sing>ul>li").on("click",function(){
+               var tid=$(this).attr("data-id");
+               $(document.getElementById(tid)).show().siblings("ul").hide();
+            $(this).addClass("active").siblings("li").removeClass("active");
+        });
+        // 整体的标签页
+        $(".hidden").on("click",function(e){
+            if(e.target.nodeName=="DIV"){
+                $(this).hide();
+                move();
+            }
+        })
+    </script>
+</body>
+</html>

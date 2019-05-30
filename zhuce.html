@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/gonggong.css">
+    <style>
+        form{
+            box-sizing: border-box;
+        }
+        .formgrop{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: .1rem 0;
+            box-sizing: border-box;
+        }
+        .formgrop>label{
+            width: 20%;
+            text-align: right;
+            font-size: .12rem;
+        }
+        .formgrop>input{
+            width: 50%;
+            height: .2rem;;
+        }
+        .formgrop>span{
+            font-size: .12rem;
+
+        }
+        button{
+            width: 1rem;
+            margin: .2rem  auto;
+            box-sizing: border-box;
+            display: block;
+            background-color: #ff8a00;
+            border: none;
+            outline: mone;
+            color: #fff;
+            padding: .05rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!--网页头部-->
+    <header id="header">
+            <span></span>
+            <span></span>
+            <span></span>
+    </header>
+    <div id="zhuce">
+        <form action="">
+            <h3>欢迎注册</h3>
+            <div class="formgrop">
+                <label for="#">用户名:</label>
+                <input type="text" placeholder="请输入用户名">
+            </div>
+            <div class="formgrop">
+                <label for="#">密码:</label>
+                <input type="password" placeholder="请输入密码">
+            </div>
+            <button>注册</button>
+        </form>
+    </div>
+    <!--网页底部-->
+    <footer id="footer">
+            <p>
+                    <a href="#">北京找房无忧</a>><a href="#">首页</a>
+                </p>
+                <div>
+                   <div>
+                       <img src="image/index/apple.png" alt="">
+                       <div>
+                           <p>iphone</p>
+                           <p>客户端</p>
+                       </div>
+                   </div>
+                   <div>
+                       <img src="image/index/android.png" alt="">
+                       <div>
+                           <p>android</p>
+                           <p>客户端</p>
+                       </div>
+                   </div>
+                </div>
+                <p class="foot">北京找房无忧房地产经纪公司</p>
+                <p class="foot">网络经营许可证京ICP备20160812号</p>
+    </footer>
+    <script src="js/zepto.js"></script>
+    <script>
+         //适应网页
+         function chang(){
+            var w=320;
+            var nw=document.documentElement.clientWidth||document.body.clientWidth;
+            document.documentElement.style.fontSize=(nw/w)*100+"px";
+        }
+        window.onresize=function(){
+            chang();
+        }
+        chang();
+        //注册
+        $("button").on("click",function(e){
+            e.preventDefault();
+            $.ajax({
+                url:"https://www.apiopen.top/createUser?key=00d91e8e0cca2b76f515926a36db68f5",
+                data:{
+                    phone:$(".formgrop:first-of-type input").val(),
+                    passwd:$(".formgrop:last-of-type input").val()
+                },
+                success:function(data){
+                    alert(data.msg);
+                    setTimeout(()=>{
+                        open("denglu.html","_self");
+                    },1000)
+                }
+            })
+        });
+    </script>
+</body>
+</html>

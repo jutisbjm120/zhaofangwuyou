@@ -1,0 +1,248 @@
+body{
+    background-color: #f5f5f5;
+}
+body,html{
+    width: 100%;
+}
+.formgrop{
+    padding: .15rem .1rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.formgrop>div{
+    position: absolute;
+    left: 76%;
+    bottom: 37%;
+}
+.formgrop>div>span{
+    float: left;
+    vertical-align: middle;
+}
+.formgrop>div>span:first-of-type{
+    color: #840084;
+    margin-right: .1rem;
+}
+.formgrop>input{
+    padding: .12rem;
+    width: 100%;
+    border-radius: .05rem;
+    outline-color: invert ;	
+    outline-style: none ;	
+    outline-width: 0rem ;	
+    border: .01rem solid #aaa;
+    text-shadow: none ;	
+    -webkit-appearance: none ;	
+    -webkit-user-select: text ;	
+    outline-color: transparent ;	
+    box-shadow: none;
+    box-sizing: border-box;
+}
+.formgrop>div>span:last-of-type{
+    width: .2rem;
+    height: .2rem;
+    background: url('../image/SecondHandList/search_03.png') no-repeat center center;
+    background-size: 100%;
+}
+.nav{
+    height: .4rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    color: #666;
+    padding: 0 .15rem;
+    background-color: #fff;
+    line-height: .4rem;
+    text-align: center;
+}
+.nav>li{
+    width: 25%;
+    text-align: center;
+}
+.nav>li>span{
+    display: inline-block;
+    border: .05rem solid transparent;
+    border-top-color: #666;
+    width: 0;
+    height: 0;
+}
+ .active{
+    color: #ff8a00;
+}
+ .hidden .active>span{
+    border-top-color: transparent;
+    border-bottom-color: #ff8a00;
+    transform: translateY(-0.03rem);
+}
+.fanglist{
+    padding: 0 .27rem;
+}
+.fanglist>ul>li{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font-size: .1rem;
+    border-bottom: .01rem solid #ff8a00;
+    padding: .25rem 0;
+}
+.fanglist>ul>li>div:first-of-type{
+    width: 30%;
+    margin-right: .13rem;
+}
+.fanglist>ul>li>div:last-of-type{
+    width: 70%;
+}
+.fanglist>ul>li>div:last-of-type>p:first-of-type{
+    margin-bottom: .1rem;
+    font-weight: 800;
+}
+.fanglist>ul>li>div:last-of-type>p:nth-of-type(3){
+    color: #b0b0bf;
+    margin: .1rem 0;
+}
+.fanglist>ul>li>div:last-of-type>p:nth-of-type(3)>b{
+    color: #ff8a00;
+}
+.fanglist>ul>li>div:last-of-type>p:nth-of-type(4){
+    color: #b0b0bf;
+}
+.hidden{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+.sing{
+    background-color: #fff;
+    width: 100%;
+    height: 2.78rem;
+    overflow: hidden;
+    display: none;
+}
+.hidden>.sing>ul{
+    width: 25%;
+    float: left;
+    background-color: #f0f0f0;
+    border-right: .01rem solid #ccc;
+    height: 100%;
+    box-sizing: border-box;
+}
+.sing>ul>li{
+    width: 101%;
+    text-align: center;
+    height: .34rem;
+    line-height: .35rem;
+}
+.sing>ul>li>a{
+    text-decoration: none;
+    color: #000;
+}
+.sing>ul>.active{
+    background-color: #fff;
+}
+.sing>ul>.active>a,.sing>div>ul>li.cc>a{
+    color: #ff8a00;
+}
+.sing>div{
+    float: left;
+    width: 75%;
+}
+.sing>div>ul{
+    width: 100%;
+    overflow: hidden;
+}
+.sing>div>ul>li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-size: .11rem;
+    line-height: .38rem;
+}
+.sing>div>ul>li>a{
+    text-decoration: none;
+    color: #666;
+}
+#ditie{
+    display: none;
+}
+.jia{
+    background-color: #fff;
+    width: 100%;
+    padding: 0 .2rem;
+    color: #666;
+    display: none;
+    font-size: .11rem;
+}
+.jia>ul>li{
+    line-height: .4rem;
+    border-bottom: .01rem solid #ccc;
+}
+.xing{
+    background-color: #fff;
+    width: 100%;
+    padding: 0 .2rem;
+    color: #666;
+    padding-bottom: .15rem;
+    box-sizing: border-box;
+    display: none;
+}
+.xing>ul>li{
+    line-height: .4rem;
+    border-bottom: .01rem solid #ccc;
+    font-size: .11rem;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: .27rem;
+}
+.xing>ul>li>input[type='checkbox']{
+    float: right;
+    width: .15rem;
+    height: .15rem;
+}
+.xing li:last-of-type{
+    border-bottom: none;
+    padding: 0;
+    justify-content: center;
+}
+.xing button{
+    width: 100%;
+    color: #fff;
+    height: .4rem;
+    line-height: .4rem;
+    background-color: #ff8a00;
+    outline: none;
+    border: none;
+}
+.duo{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: .2rem;
+    font-size: .12rem;
+    display: none;
+}
+.duo>div>ul{
+    padding-bottom:  .2rem;
+    border-bottom: .01rem solid #ccc;
+    overflow: hidden;
+}
+.duo>div>p{
+    line-height: .33rem;
+}
+.duo>div>ul>li{
+    float: left;
+    border: .01rem solid #ccc;
+    width: .62rem;
+    height: .25rem;
+    text-align: center;
+    line-height: .25rem;
+    margin: 0 .05rem .12rem 0;
+}
+
+
+

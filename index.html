@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/swiper-4.1.6.min.css">
+    <script src="js/swiper-4.1.6.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gonggong.css">
+</head>
+
+<body>
+    <!-- 模态定位框 -->
+    <div class="mot">
+        <img src="image/index/download.png" alt="">
+        <div> 
+            <h3>找房无忧</h3>
+            <p>市场行情，一手掌握！</p>
+        </div>
+       <span>免费下载</span>
+    </div>
+    <div class="motai"></div>
+    <!-- 网页头部 -->
+    <header id="header">
+            <span></span>
+            <span></span>
+            <span></span>
+    </header>
+    <!-- 轮播图 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="image/index/banner.png" alt=""></div>
+            <div class="swiper-slide"><img src="image/index/banner.png" alt=""></div>
+            <div class="swiper-slide"><img src="image/index/banner.png" alt=""></div>
+            <div class="swiper-slide"><img src="image/index/banner.png" alt=""></div>
+        </div>
+        <div class="formgrop">
+            <span></span>
+            <input type="text" placeholder="输入小区或商圈开始找房咯">
+        </div>
+    </div>
+    <!-- 二手房新房租房买房 -->
+    <ul class="main">
+        <li>
+            <img src="image/index/index_03.png" alt="">
+            <p>二手房</p>
+        </li>
+        <li>
+            <img src="image/index/index_05.png" alt="">
+            <p>新房</p>
+        </li>
+        <li>
+            <img src="image/index/index_07.png" alt="">
+            <p>租房</p>
+        </li>
+        <li>
+            <img src="image/index/index_09.png" alt="">
+            <p>卖房</p>
+        </li>
+    </ul>
+    <div class="nanner">
+        <img src="image/index/banner2.png" alt="">
+    </div>
+    <!-- 热门房源 -->
+    <div class="hotfang">
+        <h3>热门房源</h3>
+        <p>Hot houst</p>
+    </div>
+    <!-- 列表部分 -->
+    <ul class="ductlist">
+    </ul>
+    <!-- 便签页 -->
+    <div class="hotguanzhu">
+        <p>
+            <span data-id="#hot">热门关注</span>
+            <span data-id="#youqing">友情链接</span>
+        </p>
+        <div id="hot">
+            <ul>
+                <li><a href="#">北京二手房</a></li>
+                <li><a href="#">北京二手房价</a></li>
+                <li><a href="#">海淀日租房</a></li>
+                <li><a href="#">朝阳新房</a></li>
+                <li><a href="#">北京找房无忧</a></li>
+                <li><a href="#">青年家园</a></li>
+                <li><a href="#">免税房源</a></li>
+                <li><a href="#">满五唯一免税</a></li>
+            </ul>
+        </div>
+        <div id="youqing">
+            <ul>
+                <li><a href="#">北京二手房价</a></li>
+                <li><a href="#">北京二手房</a></li>
+                <li><a href="#">北京找房无忧</a></li>
+                <li><a href="#">朝阳新房</a></li>
+                <li><a href="#">青年家园</a></li>
+                <li><a href="#">满五唯一免税</a></li>
+                <li><a href="#">海淀日租房</a></li>
+                <li><a href="#">免税房源</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 网页底部 -->
+    <footer id="footer">
+            <p>
+                    <a href="#">北京找房无忧</a>><a href="#">首页</a>
+                </p>
+                <div>
+                   <div>
+                       <img src="image/index/apple.png" alt="">
+                       <div>
+                           <p>iphone</p>
+                           <p>客户端</p>
+                       </div>
+                   </div>
+                   <div>
+                       <img src="image/index/android.png" alt="">
+                       <div>
+                           <p>android</p>
+                           <p>客户端</p>
+                       </div>
+                   </div>
+                </div>
+                <p class="foot">北京找房无忧房地产经纪公司</p>
+                <p class="foot">网络经营许可证京ICP备20160812号</p>
+    </footer>
+    <script src="js/zepto.js"></script>
+    <script src="js/zepto-touch-gesture-detect.js"></script>
+    <script>
+        // swiper插件
+        var mySwiper = new Swiper('.swiper-container', {
+            speed: 300,
+            autoplay: {
+                delay: 1000
+            },
+            loop: true
+        });
+        // 异步请求
+        $(window).load(function () {
+           
+            $.ajax({
+                url: "index.json",
+                success: function (data) {
+                    var html = "";
+                    for (var i = 0; i < data.length; i++) {
+                        html += `
+                       <li>
+                            <div>
+                                <img src="image/index/${data[i].img}" alt="">
+                            </div>
+                            <div>
+                                <h3>${data[i].tittle}</h3>
+                                <p>
+                                    <span>${data[i].type}</span>
+                                    <span>${data[i].primary}万</span>
+                                </p>
+                                <p>
+                                    <span>${data[i].where}</span>
+                                    <span>${data[i].price}元/平</span>
+                                </p>
+                                <p>
+                                    <span>${data[i].biaoqian.join("</span><span>")}</span>
+                                </p>
+                            </div>
+                        </li>
+                       `;
+                    }
+                    $(".ductlist").html(html);
+                }
+            });
+            
+        });
+        // 标签页
+        $(".hotguanzhu span").on("click",function(e){
+            $(e.target).css("border-bottom","1px solid #ff8a00").siblings("span").css("border-bottom",0);
+            $($(e.target).attr("data-id")).show().siblings("div").hide();
+        });
+        //适应网页
+        function chang(){
+            var w=320;
+            var nw=document.documentElement.clientWidth||document.body.clientWidth;
+            document.documentElement.style.fontSize=(nw/w)*100+"px";
+        }
+        window.onresize=function(){
+            chang();
+        }
+        chang();
+        $(".main").on("click",()=>{
+            open("xiangqing.html");
+        });
+        $(".ductlist").on("click","li",()=>{
+            open("fanglist.html");
+        });
+
+       </script>
+
+</html>
